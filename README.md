@@ -9,3 +9,10 @@ This repository summarizes detailed implementation and additional functions used
 4. small_size(p200_n50).csv: The .csv file summarzing the eestimation result from "small_size(p200_n50).RData" and the record of the computational times.
 
 5. large_size(p500or1000_n500).zip: The workspace contains simulation results based on continuous, binary, and count random variables under n=500 and p=500 or 1000.
+
+6. large_size(p500or1000_n500)_GGM.R: The demonstration of the synthetic data with large sample size (n=500) and high dimension of variables (p=500 or 1000) under continuous variables.
+
+7. large_size(p500or1000_n500)_ISM.R: The demonstration of the synthetic data with large sample size (n=500) and high dimension of variables (p=500 or 1000) under binary variables.
+
+8. large_size(p500or1000_n500)_Counts.R: The demonstration of the synthetic data with large sample size (n=500) and high dimension of variables (p=500 or 1000) under count variables.
+
