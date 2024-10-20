@@ -7,3 +7,5 @@ This repository summarizes detailed implementation and additional functions used
 3. small_size(p200_n50).RData: The workspace contains simulation results produced by "small_size(p200_n50).R".
 
 4. small_size(p200_n50).csv: The .csv file summarzing the eestimation result from "small_size(p200_n50).RData" and the record of the computational times.
+
+5. large_size(p500or1000_n500).zip: The workspace contains simulation results based on continuous, binary, and count random variables under n=500 and p=500 or 1000.
