@@ -16,9 +16,11 @@ This repository summarizes detailed implementation and additional functions used
 
 8. large_size(p500or1000_n500)_Counts.R: The demonstration of the synthetic data with large sample size (n=500) and high dimension of variables (p=500 or 1000) under count variables.
 
-9. Classification.R: The demonstration for classification of the synthetic data.
+9. Theta_not_sparse.R: The estimation for non-sparse precision matrix.
 
-10. Classification.zip: The workspace containing classification results for the synthetic data.
+10. Classification.R: The demonstration for classification of the synthetic data.
 
-11. real_data.R: The demonstration of real data analysis.
+11. Classification.zip: The workspace containing classification results for the synthetic data.
+
+12. real_data.R: The demonstration of real data analysis.
 
