@@ -90,7 +90,7 @@ for (i in 1:10){
 
 #take average
 Theta1=matrix(0,p,p)
-for (i in 1:1){
+for (i in 1:10){
   Theta1=Theta1+Theta.hat1[,,i]
 }
 Theta1=Theta1/1
@@ -116,7 +116,7 @@ graph
 shat=diag(0,p,p)
 #Strue_for_scale_free=array(dim = c(p,p,5))
 Time=NULL
-for (i in 1:1){
+for (i in 1:10){
   set.seed(i)
   cat("\r",round(i/100*100,2), '%     ')
   set.seed(i)
@@ -170,7 +170,7 @@ for (i in 1:1){
     print(mean(Time))
   
 }
-shat=shat/5
+shat=shat/10
 shat=matrix(as.numeric(shat),nrow=p) #huge
 
 round(Strue[1:12,1:12],3)
