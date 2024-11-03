@@ -46,9 +46,9 @@ X_star=t(X_star)
 X1=mvrnorm(n,rep(0,q2),diag(1,q2,q2))
 X_star=cbind(X_star,X1)
 
-#simulation 100 times
+
 Theta.hat1=array(dim = c(p,p,1))
-for (i in 1:1){
+for (i in 1:5){
   #data generation
   cat("\r",round(i/100*100,2), '%     ')
   set.seed(i)
