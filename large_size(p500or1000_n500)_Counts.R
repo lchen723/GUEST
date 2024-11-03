@@ -48,7 +48,7 @@ X_star=cbind(X_star,X1)
 
 
 Theta.hat1=array(dim = c(p,p,1))
-for (i in 1:5){
+for (i in 1:10){
   #data generation
   cat("\r",round(i/100*100,2), '%     ')
   set.seed(i)
