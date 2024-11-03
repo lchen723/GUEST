@@ -1,5 +1,8 @@
-# load plsgenomics library
+# load plsgenomics and other required libraries
 library(plsgenomics)
+library(network)
+library(GGally)
+library(GUEST)
 
 # load data set
 data(SRBCT)
@@ -19,7 +22,7 @@ X_new = scale(X)
 Y=SRBCT$Y
 
 #common entries
-c1=0.15;c2=0.35;c3=0.55
+c1=0.15; c2=0.35; c3=0.55; c4=0.75; c5=0.95
 
 H=var(X_new)%*%(var(X_new)+diag(1,2308,2308))^(-2)
 
