@@ -28,7 +28,7 @@ X=mvrnorm(n,rep(0,p),diag(1,p,p))
 c=0.3
 W=X+mvrnorm(n,rep(0,p),diag(c,p,p))
 
-#simulation 100 times
+
 Theta.hat1=array(dim = c(p,p,1))
 Strue_for_scale_free=array(dim = c(p,p,1))
 Time=NULL
