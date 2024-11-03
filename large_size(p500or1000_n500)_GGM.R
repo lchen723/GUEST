@@ -32,7 +32,7 @@ W=X+mvrnorm(n,rep(0,p),diag(c,p,p))
 Theta.hat1=array(dim = c(p,p,1))
 Strue_for_scale_free=array(dim = c(p,p,1))
 Time=NULL
-for (i in 1:5){
+for (i in 1:10){
   #data generation
   cat("\r",round(i/100*100,2), '%     ')
   set.seed(i)
@@ -60,7 +60,7 @@ for (i in 1:5){
 
 #take average
 Theta1=matrix(0,p,p)
-for (i in 1:1){
+for (i in 1:10){
   Theta1=Theta1+Theta.hat1[,,i]
 }
 Theta1=Theta1/1
@@ -94,7 +94,7 @@ spe_sen_bias_kl(Theta = theta1  ,Strue = Strue_for_scale_free[,,1],p=1000)
 shat=diag(0,p,p)
 Strue_for_scale_free=array(dim = c(p,p,1))
 Time=NULL
-for (i in 1:1){
+for (i in 1:10){
   set.seed(i)
   cat("\r",round(i/100*100,2), '%     ')
   G = XMRF.Sim(n , q1, model = "GGM", graph.type = "scale-free")
