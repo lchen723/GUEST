@@ -33,10 +33,10 @@ W=matrix(unlist(W),ncol = p)
 
 #simulation
 Theta.hat1=array(dim = c(p,p,1))
-for (i in 1:1:5){
+for (i in 1:10){
   #data generation
   cat("\r",round(i/100*100,2), '%     ')
-  set.seed(1)
+  set.seed(i)
   #Data generation
   G = XMRF.Sim(n , q1, model = "ISM", graph.type = "scale-free")
   Strue = diag(1,p,p)
@@ -74,7 +74,7 @@ for (i in 1:1:5){
 
 #take average
 Theta1=matrix(0,p,p)
-for (i in 1:1){
+for (i in 1:10){
   Theta1=Theta1+Theta.hat1[,,i]
 }
 Theta1=Theta1/1
@@ -98,8 +98,8 @@ graph
 
 shat=diag(0,p,p)
 Time=NULL
-for (i in 1:1){
-  set.seed(1)
+for (i in 1:10){
+  set.seed(i)
   cat("\r",round(i/100*100,2), '%     ')
   #Data generation
   G = XMRF.Sim(n , q1, model = "ISM", graph.type = "scale-free")
@@ -155,7 +155,7 @@ for (i in 1:1){
     print(mean(Time))
   
 }
-shat=shat/5
+shat=shat/10
 shat=matrix(as.numeric(shat),nrow=p) #huge
 
 round(Strue[1:12,1:12],3)
