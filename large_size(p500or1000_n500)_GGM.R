@@ -32,7 +32,7 @@ W=X+mvrnorm(n,rep(0,p),diag(c,p,p))
 Theta.hat1=array(dim = c(p,p,1))
 Strue_for_scale_free=array(dim = c(p,p,1))
 Time=NULL
-for (i in 1){
+for (i in 1:5){
   #data generation
   cat("\r",round(i/100*100,2), '%     ')
   set.seed(i)
