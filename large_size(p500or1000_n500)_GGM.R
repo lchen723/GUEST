@@ -63,7 +63,7 @@ Theta1=matrix(0,p,p)
 for (i in 1:10){
   Theta1=Theta1+Theta.hat1[,,i]
 }
-Theta1=Theta1/1
+Theta1=Theta1/10
 
 round(Theta1[1:12,1:12],3)
 Strue[1:12,1:12]
@@ -135,7 +135,7 @@ for (i in 1:10){
     print(mean(Time))
   
 }
-shat=shat/5
+shat=shat/10
 shat=matrix(as.numeric(shat),nrow=p) #huge
 
 round(Strue[1:12,1:12],3)
